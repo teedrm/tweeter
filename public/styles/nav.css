@@ -1,0 +1,28 @@
+.top-nav {
+    height: 120px;
+    width: 100%;
+    background-color: #ffd000;
+    color: #FFFFFF;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo {
+    font-family: 'Bungee', 'sans-serif';
+    font-size: larger;
+    color: #FFFFFF;
+    margin: 1.5em;
+  }
+  
+  .right-nav {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  
