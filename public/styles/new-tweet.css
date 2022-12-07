@@ -25,15 +25,95 @@ button {
 
 textarea {
     outline: none;
-    overflow: hidden;
+    overflow: auto;
     resize: none;
     border: none;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid #545149;
     background-color: #fdf8e1;
     font-size: 16px;
     font-weight: 600;
     color: #545149;
     margin-top: 1em;
-    height: 35px;
+    height: 50px;
     width: 100%;
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+textarea::-webkit-scrollbar-track {
+    background-color: #fdf8e1;
+    border-radius: 10px;
+}
+ 
+textarea::-webkit-scrollbar-thumb {
+    background-color: #545149;
+    border-radius: 5px;
+}
+
+.tweet-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+article {
+    border: 3px solid #545149;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+article:hover {
+    box-shadow: 5px 5px rgba(84, 81, 73, 0.3);
+}
+
+.tweet-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 10px;
+    padding-bottom: 50px;
+}
+
+.tweet-footer {
+    border-top: 3px solid #545149;
+    margin: 20px 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message {
+    margin: 10px 10px;
+}
+
+.id {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img {
+    margin-right: 10px;
+}
+
+.hashtag {
+    margin: 10px;
+    margin-top: 35px;
+    color: rgba(84, 81, 73, 0.6);
+}
+
+.fa-flag, .fa-retweet {
+    margin-right: 10px;
+}
+
+.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
+    cursor: pointer;
+    color: #ffd000;
 }
