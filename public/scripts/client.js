@@ -90,4 +90,12 @@ $(document).ready(function() {
   };
   loadTweets();
 
+// Hide at start and toggle to show -> write tweet option
+$('.new-tweet').hide();
+
+$('.fa-angles-down').on('click', function(event) {
+  $('.new-tweet').toggle();
 });
+
+});
+
