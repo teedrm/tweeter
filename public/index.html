@@ -18,6 +18,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
@@ -48,7 +53,7 @@
     </div>
     <div class="right-nav">
       <span id="write"><b>Write</b> a new tweet</span>
-      <i class="fa-solid fa-angles-down" style="color: #fe6f5e;"></i>
+      <i class="fa-solid fa-angles-down animate__animated animate__shakeX" style="color: #fe6f5e;"></i>
     </div>
   </nav>
 
@@ -59,7 +64,7 @@
     </div>
     <br>
     <div>
-      <h2 class="name">Thy Nguyen</h2>
+      <span class="name"><strong>Thy</strong> Nguyen</span>
     </div>
   </header>
 
@@ -72,7 +77,7 @@
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
 
         <div class="button-count">
-          <button type="submit">Tweet</button>
+          <button id="tweetsubmit" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
