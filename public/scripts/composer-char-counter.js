@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('.counter').text(140 - charsEntered);
 
     if (charsEntered >= 140) {
-      return $('.counter').css("color", "red");
+      return $('.counter').css("color", "#fe6f5e");
     }
     $('.counter').css("color", "#545149");
   });
