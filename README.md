@@ -7,7 +7,7 @@ Tweeter is a simple, single-page Twitter clone. This is built with HTML, CSS, JS
 !["Gif to demo the features of Tweeter"](https://github.com/teedrm/tweeter/blob/master/docs/tweet-demo.gif)
 
 
-#### Screenshot Tweeter on smaller screen
+#### Screenshot of Tweeter on smaller screen
 !["Screenshot of Tweeter on a smaller screen"](https://github.com/teedrm/tweeter/blob/master/docs/small-screen-view.png)
 
 ## Getting Started
