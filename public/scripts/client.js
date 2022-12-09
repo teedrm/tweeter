@@ -51,8 +51,8 @@ $(document).ready(function() {
   };
 
 
-
-  $("form").submit(function(event) {
+// event listener to handle form submission
+  $('form').submit(function(event) {
 
     event.preventDefault();
 
@@ -71,8 +71,12 @@ $(document).ready(function() {
         url: '/tweets',
         method: 'POST',
         data: $(this).serialize(),
-      });
-      location.reload(true);
+      })
+      .then(function(res) {
+        renderTweets(res);
+        $('#tweet-text').val('');
+        $(`.counter`).val(140);
+      })
     }
   });
 
@@ -90,7 +94,8 @@ $(document).ready(function() {
   };
   loadTweets();
 
-// Hide at start and toggle to show -> write tweet option
+// Hide at start and toggle angles-down to show -> write tweet option
+// Click again to hide
 $('.new-tweet').hide();
 
 $('.fa-angles-down').on('click', function(event) {
