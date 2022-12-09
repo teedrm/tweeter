@@ -2,17 +2,26 @@
     height: 400px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #fdf8e1;
-    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+    flex-flow: column wrap;
+    background-color: #b4deff;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 .name {
     margin-top: 0;
+    color: white;
+    font-size: larger;
 }
 
 img {
     display: flex;
+}
+
+@media only screen and (min-width:1024px) {
+    .main-header {
+        margin-left: 1.5em;
+        width: 35%;
+    }
 }
